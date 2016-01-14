@@ -1,7 +1,7 @@
 <?php
 
 /*
-Plugin Name: wp-fullstory
+Plugin Name: WP Fullstory
 Plugin URI: https://github.com/geordie--/wp-fullstory
 Description: Simple WordPress plugin to embed FullStory snippet
 Author: Giorgio Delle Grottaglie
@@ -14,7 +14,7 @@ Author URI: https://github.com/geordie--/
 add_action('admin_menu', 'fullstory_admin_menu');
 
 function fullstory_admin_menu() {
-  add_menu_page('FullStory JS Snippet', 'FullStory', 'administrator','fullstory_options', 'fullstory_admin_overview');
+  add_menu_page('FullStory JS Snippet', 'WP FullStory', 'administrator','fullstory_options', 'fullstory_admin_overview');
   add_action( 'admin_init', 'register_fullstory_settings' );
  }
 
